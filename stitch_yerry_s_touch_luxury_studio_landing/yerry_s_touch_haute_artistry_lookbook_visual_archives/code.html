@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yerry's Touch — Haute Artistry Lookbook &amp; Visual Archives</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-fixed-variant": "#574500",
+            "on-primary-fixed": "#241a00",
+            "on-error-container": "#93000a",
+            "on-error": "#ffffff",
+            "tertiary": "#745b1a",
+            "secondary-fixed-dim": "#d4c3bf",
+            "surface-dim": "#dcdad5",
+            "surface-bright": "#fcf9f4",
+            "on-tertiary": "#ffffff",
+            "background": "#fcf9f4",
+            "secondary-container": "#eedcd8",
+            "on-tertiary-container": "#584200",
+            "primary-container": "#d4af37",
+            "outline-variant": "#d0c5af",
+            "surface-variant": "#e5e2dd",
+            "on-secondary-container": "#6d605d",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#d0af66",
+            "tertiary-fixed-dim": "#e4c277",
+            "surface-container-highest": "#e5e2dd",
+            "primary": "#735c00",
+            "on-secondary-fixed-variant": "#504441",
+            "on-background": "#1c1c19",
+            "surface-container": "#f0ede9",
+            "surface-container-high": "#ebe8e3",
+            "on-primary-container": "#554300",
+            "inverse-surface": "#31302d",
+            "inverse-on-surface": "#f3f0eb",
+            "secondary": "#695b59",
+            "secondary-fixed": "#f1dfdb",
+            "on-surface-variant": "#4d4635",
+            "primary-fixed": "#ffe088",
+            "surface": "#fcf9f4",
+            "on-secondary-fixed": "#231917",
+            "outline": "#7f7663",
+            "on-tertiary-fixed-variant": "#5a4302",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#ffdf9b",
+            "primary-fixed-dim": "#e9c349",
+            "on-secondary": "#ffffff",
+            "error-container": "#ffdad6",
+            "surface-container-low": "#f6f3ee",
+            "on-tertiary-fixed": "#251a00",
+            "on-surface": "#1c1c19",
+            "error": "#ba1a1a",
+            "surface-tint": "#735c00",
+            "inverse-primary": "#e9c349"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            "margin": "4rem",
+            "space-xl": "3rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.75rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "display-hero": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "display-hero-mobile": ["Playfair Display", "serif"],
+            "title-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "label-lg": ["12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "display-hero-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Architectural Salon Fluting & Subtle Gold Patterns */
+    .bg-fluting {
+      background-image: repeating-linear-gradient(
+        90deg,
+        rgba(30, 21, 19, 0.015) 0px,
+        rgba(30, 21, 19, 0.015) 1px,
+        transparent 1px,
+        transparent 14px
+      );
+    }
+    
+    .gold-foil-border {
+      border: 1px solid rgba(212, 175, 55, 0.35);
+    }
+    
+    .gold-foil-border-subtle {
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .specular-gold-glow {
+      box-shadow: 0 16px 36px -10px rgba(212, 175, 55, 0.18), 0 4px 14px rgba(30, 21, 19, 0.03);
+    }
+
+    .cathedral-arch {
+      border-top-left-radius: 140px;
+      border-top-right-radius: 140px;
+    }
+
+    .capsule-frame {
+      border-radius: 9999px;
+    }
+
+    @keyframes slowSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .animate-spin-slow {
+      animation: slowSpin 24s linear infinite;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background bg-fluting antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- ================= TOP NAVIGATION BAR (Shared Anchor) ================= -->
+<header class="sticky top-0 z-50 w-full bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-[0_4px_20px_-4px_rgba(212,175,55,0.12)]">
+<div class="flex justify-between items-center w-full px-6 lg:px-12 py-4 max-w-7xl mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary font-semibold tracking-wide flex items-center gap-2" href="#">
+<span class="tracking-tight">Yerry's Touch</span>
+<span class="text-primary-container text-lg">✦</span>
+</a>
+<!-- Desktop Nav Links (Active state mapped to 'Portfolio' / Lookbook) -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-surface-variant font-medium pb-1 transition-colors duration-200 hover:text-primary dark:hover:text-inverse-primary text-label-lg font-label-lg uppercase tracking-wider" href="#about">
+          About
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium pb-1 transition-colors duration-200 hover:text-primary dark:hover:text-inverse-primary text-label-lg font-label-lg uppercase tracking-wider" href="#services">
+          Services
+        </a>
+<!-- ACTIVE TAB: Portfolio / Visual Archives -->
+<a class="text-primary dark:text-inverse-primary border-b-2 border-primary-container font-semibold pb-1 text-label-lg font-label-lg uppercase tracking-wider" href="#portfolio">
+          Portfolio
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium pb-1 transition-colors duration-200 hover:text-primary dark:hover:text-inverse-primary text-label-lg font-label-lg uppercase tracking-wider" href="#experience">
+          Experience
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium pb-1 transition-colors duration-200 hover:text-primary dark:hover:text-inverse-primary text-label-lg font-label-lg uppercase tracking-wider" href="#studio">
+          Studio
+        </a>
+</nav>
+<!-- Trailing Action Buttons -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center text-label-lg font-label-lg uppercase tracking-wider px-4 py-2 rounded-lg text-primary border border-primary-container/40 hover:bg-secondary-container/40 transition-all duration-200" href="#contact">
+          Contact
+        </a>
+<a class="inline-flex items-center gap-2 bg-gradient-to-r from-tertiary-fixed-dim via-primary-container to-primary-fixed text-on-primary-fixed text-label-lg font-label-lg uppercase tracking-wider font-bold px-5 py-2.5 rounded-lg specular-gold-glow active:scale-[0.98] transition-all duration-200 hover:brightness-105" href="#book">
+<span class="material-symbols-outlined text-[18px]" data-icon="calendar_month">calendar_month</span>
+<span>Book Appointment</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ================= HERO SECTION ================= -->
+<section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-gradient-to-b from-primary-container/15 via-secondary-container/20 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<div class="absolute top-1/3 right-10 w-96 h-96 bg-tertiary-container/10 blur-3xl pointer-events-none rounded-full"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 text-center">
+<!-- Studio Monogram / Gold Accent Pin -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-low border border-primary-container/30 text-on-surface-variant mb-6 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-semibold">Gullele Luxury Salon Suite • Addis Ababa</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-headline-lg-mobile md:text-display-hero text-on-background tracking-tight max-w-4xl mx-auto mb-6">
+        The Living Canvas &amp; <span class="italic font-normal text-primary">Haute Archives</span>
+</h1>
+<!-- Subhead -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+        A curated tapestry of Ethiopian royal bridal traditions, high-fashion editorial glow, and studio masterclasses captured in bespoke architectural frames.
+      </p>
+<!-- Signature Metric Badges -->
+<div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-14">
+<div class="px-5 py-2.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md gold-foil-border-subtle shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-lg text-label-lg tracking-wider text-on-surface uppercase">1,200+ Documented Looks</span>
+</div>
+<div class="px-5 py-2.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md gold-foil-border-subtle shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="camera">camera</span>
+<span class="font-label-lg text-label-lg tracking-wider text-on-surface uppercase">4K Ultra-Definition Skin Chemistry</span>
+</div>
+<div class="px-5 py-2.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md gold-foil-border-subtle shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="crown">crown</span>
+<span class="font-label-lg text-label-lg tracking-wider text-on-surface uppercase">Bespoke Ethiopian Bridal &amp; Melse</span>
+</div>
+</div>
+<!-- Category Filter Pills (Stateful Design) -->
+<div class="flex items-center justify-start md:justify-center gap-2 overflow-x-auto pb-4 hide-scrollbar max-w-4xl mx-auto">
+<button class="shrink-0 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider font-semibold shadow-md border border-primary-container transition-all">
+          All Archives (48)
+        </button>
+<button class="shrink-0 px-5 py-2.5 rounded-full bg-surface-container-lowest/90 hover:bg-secondary-container/50 text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg uppercase tracking-wider border border-outline-variant/40 transition-all">
+          Royal Ethiopian Bridal &amp; Melse (18)
+        </button>
+<button class="shrink-0 px-5 py-2.5 rounded-full bg-surface-container-lowest/90 hover:bg-secondary-container/50 text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg uppercase tracking-wider border border-outline-variant/40 transition-all">
+          High-Fashion Editorial (12)
+        </button>
+<button class="shrink-0 px-5 py-2.5 rounded-full bg-surface-container-lowest/90 hover:bg-secondary-container/50 text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg uppercase tracking-wider border border-outline-variant/40 transition-all">
+          Graduation &amp; Milestone Glow (10)
+        </button>
+<button class="shrink-0 px-5 py-2.5 rounded-full bg-surface-container-lowest/90 hover:bg-secondary-container/50 text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg uppercase tracking-wider border border-outline-variant/40 transition-all">
+          Masterclass &amp; Studio Moments (8)
+        </button>
+</div>
+</div>
+</section>
+<!-- ================= ASYMMETRIC LOOKBOOK GALLERY ================= -->
+<section class="py-12 lg:py-20 max-w-7xl mx-auto px-6 lg:px-12" id="portfolio">
+<!-- Section Architectural Ornament Header -->
+<div class="flex items-center justify-center gap-4 mb-16">
+<div class="h-[1px] w-16 sm:w-32 bg-gradient-to-r from-transparent to-primary-container"></div>
+<div class="w-3 h-3 rotate-45 border border-primary-container bg-surface-container-low"></div>
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-primary font-bold">Curated Portfolios</span>
+<div class="w-3 h-3 rotate-45 border border-primary-container bg-surface-container-low"></div>
+<div class="h-[1px] w-16 sm:w-32 bg-gradient-to-l from-transparent to-primary-container"></div>
+</div>
+<!-- Masonry & Geometric Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10 items-start">
+<!-- CARD 1: Architectural Arch Frame (Royal Habesha Bridal Crowning) -->
+<div class="md:col-span-6 lg:col-span-5 group relative">
+<div class="relative bg-surface-container-lowest p-3 cathedral-arch gold-foil-border specular-gold-glow transition-all duration-500 group-hover:-translate-y-2">
+<div class="overflow-hidden cathedral-arch relative aspect-[3/4.2] w-full bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A magnificent Ethiopian bride adorned in a handcrafted gold crown and royal Habesha Kemis with fine golden embroidery. Her makeup features luminous champagne skin architecture, softly sculpted eyes, and warm rosy nude lips. Shot in warm high-key editorial sunlight with rich romantic champagne and ivory tones echoing luxury Addis Ababa bridal prestige." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeKOxDREHd5uyrfI0EAZuIRQaFhveJYiUIAk2oz5veMRRy4I_kmKnkmTjH0jin8RoS7SzdY26qtshu5iurUxSwIvkDMv_LUehUaonBH3fGxcyUPp2cwV4BRbPAhObNWymVn92Y8wzUobrBpAUIqodzqHVtsJZB_6QI8B740OIeiiqu5jiL1izjuTG4qCTI1ra3D-xpQxs42ZwovUdRf1TZ5Ea9ZBXxZwncrwcuazMTva-14NWaWg0O"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<!-- Floating Hover Tag -->
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between text-on-primary">
+<div>
+<span class="inline-block px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider font-bold mb-2">
+                  Melse Crowning • Skylight Hotel
+                </span>
+<h3 class="font-headline-sm text-headline-sm font-serif text-surface-bright">The Imperial Empress Bride</h3>
+<p class="font-body-md text-body-md text-surface-variant font-light">18-Hour Tear-Proof Hydration Shield</p>
+</div>
+<button aria-label="Expand view" class="w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-background group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="fullscreen">fullscreen</span>
+</button>
+</div>
+</div>
+<div class="p-4 text-center">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-semibold">Couture Arch Archive #01</span>
+</div>
+</div>
+</div>
+<!-- CARD 2: Studio Founder Yeron Habtamu (Squircle / Custom Salon Counter Image from Reference) -->
+<div class="md:col-span-6 lg:col-span-7 group relative md:translate-y-12">
+<div class="relative bg-surface-container-lowest p-4 rounded-3xl gold-foil-border shadow-lg transition-all duration-500 group-hover:-translate-y-2">
+<div class="overflow-hidden rounded-2xl relative aspect-[4/4.5] w-full bg-surface-container-high">
+<img alt="Yeron Habtamu, founder of Yerry's Touch, smiling at her beauty studio counter in Addis Ababa beside a grand bouquet of red and yellow roses and a custom makeup-themed salon celebration cake" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXY1ygQri6qFf8Dw1BtStlqny6l_a3HM-0SH8A536LfOXLHJr-utJedXBhsdNTsrvYPI-kA4yky-dkWPc9-KvQKyIDwy9vNkNN4o31jXdsIUoCpI3dnrfzdqi-t9Hh-rBUzw9fH_O3h5IdnKicJ4DQ0G6LlMbPqhjslZ27xSAMJqr33possX_bX9p6gYOlX75cz1ldPItehaawdtmpkk3z2u0EXU2WWsTWA50KuRQGnV8yUK_1DSWFmShbz_g4Dg3DPA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/70 via-transparent to-transparent opacity-50 group-hover:opacity-75 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between text-on-primary">
+<div>
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase tracking-wider font-bold mb-2">
+                  Studio Founder &amp; Lead Artist
+                </span>
+<h3 class="font-headline-md text-headline-md font-serif text-surface-bright">Yeron Habtamu at Yerry's Touch</h3>
+<p class="font-body-md text-body-md text-surface-variant font-light">Welcoming bridal muses to the flagship Gullele Salon Suite</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-background font-label-md text-label-md font-semibold">
+                  Gullele, Addis
+                </span>
+</div>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="verified">verified</span>
+<span class="font-title-lg text-title-lg text-on-surface">Artisanal Precision &amp; Radiance</span>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant">Permanent Archive</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: Circular Cameo Portrait with Animated Gold Ring -->
+<div class="md:col-span-6 lg:col-span-4 group relative flex flex-col items-center text-center">
+<div class="relative w-72 h-72 sm:w-80 sm:h-80 my-4 flex items-center justify-center">
+<!-- Rotating Gold Dashed Halo Border -->
+<div class="absolute inset-0 rounded-full border-2 border-dashed border-primary-container animate-spin-slow"></div>
+<!-- Inner Circle Card -->
+<div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full overflow-hidden p-2 bg-surface-container-lowest gold-foil-border specular-gold-glow">
+<img class="w-full h-full rounded-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" data-alt="Extreme macro close up of a luxury bridal eye and lip artistry. Featuring velvet warm terracotta lip pigments with gold gloss reflection, micro-winged liner, and seamless dewy cheekbone highlighter on smooth radiant Ethiopian skin. Editorial studio flash lighting with subtle warm champagne ambient tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvywc3hcLmzaFgx_vOKxpJbA_6g5CzgCCNRkbCFPny-6kqWec5CmLmkKeC-IOZR8vdaEMTMLp0UVdG0GMzf6-kJ8X29blonEUBAd5F04nQg3Bx6O25lyLzsCWlS9jeA0kRYsJ_8lMsDNz8Ud7som1RUnlHLRcJ06UAovUAI7tAaByOuoWGabUrvT9j-EMvLh86AE6eJFcbSFAjySN9f4vVkZ-OeOXGuP9HOCdi6_Q4RfNuarYlzTlG"/>
+</div>
+<!-- Micro Floating Badge -->
+<div class="absolute -bottom-2 px-4 py-1.5 rounded-full bg-inverse-surface text-surface-bright font-label-md text-label-md tracking-wider uppercase font-semibold shadow-md">
+            Macro Pigment Study
+          </div>
+</div>
+<h4 class="font-headline-sm text-headline-sm mt-4 text-on-surface">Precision Lip &amp; Velvet Brow Craft</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-1">Multi-dimensional undertone matching for heirloom photography.</p>
+</div>
+<!-- CARD 4: Founder Yeron Delivering Keynote & Masterclass at Podium (From Image Reference 5) -->
+<div class="md:col-span-6 lg:col-span-8 group relative">
+<div class="relative bg-surface-container-lowest p-4 rounded-3xl gold-foil-border shadow-lg transition-all duration-500 group-hover:-translate-y-2">
+<div class="overflow-hidden rounded-2xl relative aspect-[16/11] w-full bg-surface-container-high">
+<img alt="Yeron Habtamu speaking passionately into microphones on a white draped floral podium, wearing a traditional Ethiopian dress with red embroidery at a prestigious beauty masterclass event" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXZbruapV1t7RTVZ7pmifVlPMWQS3pA2E0dmV1YHXlDNMnHVnpDNIC0pv_KdGptlYcVdQTLEZpww526KsH5m7NnKxbhZ41WY05m11e_lHpU9z2HMHCwnKq8iy2k5BQNh8NVlgze3teHnYD5y4JGmWzs1JSbVBxy-qclbEJvYWMGdPT9Sy2e0m3K6u2_e6KfRbU1cu2rAVEo9Gng5YYGsZ3guBA_qcQlKgjtZip1yVONq1ngp1BYk6JI2OVUimtALLimg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-60 group-hover:opacity-85 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between text-on-primary">
+<div>
+<span class="inline-block px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md uppercase tracking-wider font-bold mb-2">
+                  Masterclass &amp; Industry Direction
+                </span>
+<h3 class="font-headline-md text-headline-md font-serif text-surface-bright">Bridal Masterclass Symposium</h3>
+<p class="font-body-md text-body-md text-surface-variant font-light">Mentoring next-generation East African luxury makeup artists</p>
+</div>
+<a class="inline-flex items-center gap-1 text-label-lg font-label-lg uppercase tracking-wider text-primary-fixed hover:text-surface-bright transition-colors" href="#services">
+<span>View Program</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-primary font-bold">Keynote Stage • Addis Ababa</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Class of 2024 Certification Showcase</span>
+</div>
+</div>
+</div>
+<!-- CARD 5: Vertical Fluted Capsule Card (High-Fashion Editorial Dewy Glam) -->
+<div class="md:col-span-6 lg:col-span-4 group relative">
+<div class="relative bg-surface-container-lowest p-3 rounded-[3.5rem] gold-foil-border specular-gold-glow transition-all duration-500 group-hover:-translate-y-2">
+<div class="overflow-hidden rounded-[3rem] relative aspect-[3/4.6] w-full bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="An editorial high-fashion fashion model with radiant bronze glowing complexion and dramatic glossy eyelids, wearing an avant-garde champagne silk headpiece. Captured in a warm minimal studio setting with soft side-rim lighting, creating a luxury editorial magazine aesthetic with pristine golden and alabaster undertones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNZ9152t1D0s5DoO3tDmS07rkwReshxtGLwLhAX3cR_vkT9SMXtO1cgHCDXoLUK-lMZtrrcAcEEx8tjBT9zv5tJTxV_6W9V-8azzWczOepg0xoVC7X4SvU7rxSDHSD5OB0rogA2Gjwy2E6re5eAZ6G44vwiwVQK4T1-ypPh9Wbbm6nSaZ95lIgP2GzbYoAdWoeNzlk9WR_AsE6MNbv0eBlNoGaWByqzm60ETvQkbHwmIbrVti7fMFH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/10 to-transparent opacity-65 group-hover:opacity-85 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 right-6 text-on-primary">
+<span class="inline-block px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider font-bold mb-2">
+                Haute Runway Glow
+              </span>
+<h3 class="font-headline-sm text-headline-sm font-serif text-surface-bright">The Alabaster Glow Concept</h3>
+<p class="font-body-md text-body-md text-surface-variant font-light">Featured in Addis Fashion Editorial 2024</p>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 6: Wide Letterbox Cinematic Card (Bridal Party Gathering) -->
+<div class="md:col-span-6 lg:col-span-8 group relative">
+<div class="relative bg-surface-container-lowest p-4 rounded-3xl gold-foil-border shadow-md transition-all duration-500 group-hover:-translate-y-2">
+<div class="overflow-hidden rounded-2xl relative aspect-[21/10] w-full bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A joyful luxury Ethiopian bridal entourage celebration with seven bridesmaids in flowing rose-champagne chiffon gowns surrounding the bride at a sunlit grand Addis Ababa ballroom. Soft ambient morning light, authentic laughter, and unified cohesive beauty palettes tailored to each unique undertone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMbH6UbbnwZwHGLziLTIjUldbVNuALKLfYbaFkiD1s1mZvftJhFmkzaKHNhNCDLJE-HZemqPoyKcMetWMhjxK5GNWnkb7q_grfFtVnUV8fsB8LAriYvVUMfuZOnnCKS22jTgvl17pKf_1tJB3E6tpTy2-ZtswUbRH3X7FB_XD5XPa2xDTNESLNO7df2xpdkIJRl72CZzCcbf7ESHO57M2U4VGGPG8SXqqBPFeLyzQmCbpEMTeWEadK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between text-on-primary">
+<div>
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase tracking-wider font-bold mb-2">
+                  Full Bridal Entourage Suite
+                </span>
+<h3 class="font-headline-md text-headline-md font-serif text-surface-bright">The Grand Melse Bridal Party</h3>
+<p class="font-body-md text-body-md text-surface-variant font-light">Comprehensive 8-person VIP on-location beauty concierge</p>
+</div>
+<span class="px-4 py-2 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-lg text-label-lg font-bold">
+                Sheraton Addis
+              </span>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface font-medium">Bespoke Bridal Suite Timeline Execution</span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">All-Day Touchup Service</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= THE CRAFT BEHIND THE GLOW (Skin Architecture Breakdown) ================= -->
+<section class="py-16 lg:py-24 bg-surface-container-low border-y border-outline-variant/30 relative">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-primary font-bold block mb-3">Skin Chemistry &amp; Artistry Principles</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">The Craft Behind The Glow</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 font-light">
+          Every look is an intentional architectural composition formulated for flash photography, high-definition 4K videography, and lasting comfort through emotional wedding ceremonies.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest/90 backdrop-blur-md gold-foil-border-subtle specular-gold-glow flex flex-col justify-between hover:border-primary-container transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container/60 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[26px]" data-icon="water_drop">water_drop</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Dewy Base Architecture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+              Triple-layer skin hydration using botanical hyaluronic serums and light-reflecting primers to mirror skin's natural lipid mantle without greasiness.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md text-primary font-bold uppercase tracking-wider">
+<span>Skin Chemistry</span>
+<span>MAC • Dior • Huda</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest/90 backdrop-blur-md gold-foil-border-subtle specular-gold-glow flex flex-col justify-between hover:border-primary-container transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[26px]" data-icon="diamond">diamond</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Habesha Jewelry Harmony</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+              Meticulous color temperature balancing to complement traditional Ethiopian 21K and 24K yellow gold bridal crowns, earrings, and intricate cross medallions.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md text-primary font-bold uppercase tracking-wider">
+<span>Harmonized Tone</span>
+<span>Warm Champagne Leaf</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest/90 backdrop-blur-md gold-foil-border-subtle specular-gold-glow flex flex-col justify-between hover:border-primary-container transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/30 flex items-center justify-center text-tertiary mb-6">
+<span class="material-symbols-outlined text-[26px]" data-icon="shield">shield</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">18H Tear-Resistant Chemistry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+              Micro-fine polymer setting matrices that resist moisture, tears during parental blessings, and radiant hall spotlights throughout the celebratory night.
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-label-md font-label-md text-primary font-bold uppercase tracking-wider">
+<span>Longevity Rating</span>
+<span>Ultra 18-Hour Lock</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CLIENT REELS / HORIZONTAL CAROUSEL ================= -->
+<section class="py-16 lg:py-24 max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-primary font-bold block mb-2">Live Motion Archives</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">Bridal Glow in Motion</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0 font-light">
+        Unfiltered video stills highlighting how Yerry's Touch skin architecture reacts under ambient salon and ballroom chandeliers.
+      </p>
+</div>
+<!-- Scrollable Reel Strip -->
+<div class="flex gap-6 overflow-x-auto pb-6 hide-scrollbar">
+<!-- Reel 1 -->
+<div class="shrink-0 w-64 sm:w-72 group cursor-pointer">
+<div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container-high gold-foil-border-subtle shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial portrait of an Ethiopian bride looking into a gold framed vanity mirror as delicate finishing powder is applied with a fluffy brush. Warm diffused golden lighting highlights her glowing cheekbones and soft bridal veil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEqh5nfX1j46UJUrcNZTRSG4RZj7viQq-Xksca7w5EcW0QeFbo-pOXL2BpIR5hrVwpOUYqvmavVXZxyDso4qyrvvqp5ESN9lt8KvANzcyAckqDcEOlUAc0T8q1CqYhmk-dHBMbCPExaxoijqHYTKFhQRa0ET8DpYX208YOjO31OGEweobxSlSXdTWwlH2J61_z0Qb5bUHDn0yiVhiCfctYFCTbixQZP9_E9gBtaKhczMCuA16sdfma"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-transparent to-transparent"></div>
+<!-- Play Badge -->
+<div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="play_arrow">play_arrow</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-on-primary">
+<p class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed mb-1 font-bold">Bride Helen T.</p>
+<h4 class="font-title-lg text-title-lg text-surface-bright leading-tight">Morning Dressing Suite Glam</h4>
+</div>
+</div>
+</div>
+<!-- Reel 2 -->
+<div class="shrink-0 w-64 sm:w-72 group cursor-pointer">
+<div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container-high gold-foil-border-subtle shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A gorgeous bride in traditional Ethiopian Habesha wedding finery spinning gracefully, laughing with joy. Her radiant golden makeup captures the warm incandescent chandelier lights of the grand reception room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEkp5hPMuy6xf-YEZ_vIEIww5H4QN4mdxnPL9rnc_c2Ixl4bhTXjjBgMv5HbZ5wHcC0EXfXMBxba3z9jSB4fi7b0E3xsFPCLT0XGL19F0FDqYp06OzuyCWRL8ntAQAW8ADnpWmYVvPWKz0ueDY3KZ6GpTZkLXWf7wDfTKsGGC4LT3fUn5NufjgWmbfFTMa43eqxcnS7aOjtGWREw3ELg1zAsVif7O1mIOIX9uQVYlgqU4auQr5izE0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-transparent to-transparent"></div>
+<div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="play_arrow">play_arrow</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-on-primary">
+<p class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed mb-1 font-bold">Bride Sara M.</p>
+<h4 class="font-title-lg text-title-lg text-surface-bright leading-tight">Melse Traditional Dance Reveal</h4>
+</div>
+</div>
+</div>
+<!-- Reel 3 -->
+<div class="shrink-0 w-64 sm:w-72 group cursor-pointer">
+<div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container-high gold-foil-border-subtle shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Masterclass demonstration close up of makeup artist Yeron Habtamu blending creamy bronze highlighter onto a student model cheekbone during an elite masterclass at the Gullele studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMnt7WPh2nhUpuDTQLhjuqAGsFx6cB6ONxHapeKBs2CwTJW_6CjoBHdVGOo0flQV1w2PY4RIWmykZSo_ZB6RtS6TbUSAofmE5x3kq-nb79vQ9L3rkhxAXFLRzwOn3Bpq4Oik-CGo95DSBK7OxFHOWXkI1NgHTWi_LnOpWMPfFuNKzmi3SKWje1OMwghIaYu94iYzZ4NEs1zfxYGIqhN2KNTqOvKZI12sfuWAJGIeAn8-BcnsOAQg2s"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-transparent to-transparent"></div>
+<div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="play_arrow">play_arrow</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-on-primary">
+<p class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed mb-1 font-bold">Masterclass Series</p>
+<h4 class="font-title-lg text-title-lg text-surface-bright leading-tight">Mastering Under-Eye Geometry</h4>
+</div>
+</div>
+</div>
+<!-- Reel 4 -->
+<div class="shrink-0 w-64 sm:w-72 group cursor-pointer">
+<div class="relative aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container-high gold-foil-border-subtle shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up video still showing radiant bridal skin before and after setting spray application, showcasing immaculate dewy texture that looks completely lifelike, poreless and refined." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-N42GcxsHafVg1J7u-zqPlCmfyB2wdXggPpWUoERB8dSAcD-16yYRelhSLZTgJgTlu06Yy3RjymzXiRevJCrpYCLUUHKv9K3Ay6Pm3sTtPop-IzuAryXzheajeQiaf-mxB-YXtTB1IFltv_wisSv6ZdarTXzS7Z-GQFWYJeV0pEKaCO_ROnwMl0Jsl9pVyn1avcSS3WzMgPxZlGOgQQugmJdlZhMlkrPjEhPqj8cim-CWRkNFsDLi"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-transparent to-transparent"></div>
+<div class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[20px]" data-icon="play_arrow">play_arrow</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-on-primary">
+<p class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed mb-1 font-bold">Editorial Muse Liya</p>
+<h4 class="font-title-lg text-title-lg text-surface-bright leading-tight">4K Ultra Skin Architecture Test</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= FLOATING LUXURY BOOKING BANNER ================= -->
+<section class="py-16 max-w-7xl mx-auto px-6 lg:px-12" id="book">
+<div class="relative rounded-3xl overflow-hidden bg-inverse-surface text-inverse-on-surface p-8 sm:p-14 lg:p-16 gold-foil-border specular-gold-glow">
+<!-- Subtle Ambient Decorative Circle -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary-container/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+<div class="max-w-2xl text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container-lowest/10 border border-primary-container/40 text-primary-fixed mb-4">
+<span class="material-symbols-outlined text-[16px]" data-icon="sparkles">arrow_back_ios_new</span>
+<span class="font-label-md text-label-md uppercase tracking-widest font-semibold">2025/2026 Bridal Calendar Open</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-surface-bright mb-4">
+            Ready to Become the Next Muse?
+          </h2>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/80 font-light">
+            Due to our high commitment to individualized skin preparation, bridal bookings are accepted on a limited seasonal basis. Reserve early for major Ethiopian wedding peaks.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 border border-primary-container/40 text-surface-bright text-label-lg font-label-lg uppercase tracking-wider transition-all" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
+<span>WhatsApp Concierge</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-tertiary-fixed-dim via-primary-container to-primary-fixed text-on-primary-fixed text-label-lg font-label-lg uppercase tracking-wider font-bold shadow-lg hover:brightness-105 active:scale-[0.98] transition-all" href="#book-form">
+<span class="material-symbols-outlined text-[18px]" data-icon="calendar_month">calendar_month</span>
+<span>Reserve Bridal Date</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= LUXURY FOOTER (Shared Component Anchor) ================= -->
+<footer class="w-full bottom-0 bg-inverse-surface dark:bg-surface-container-lowest border-t border-outline/30 dark:border-outline-variant/30 flat no shadows">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-6 lg:px-12 py-12 max-w-7xl mx-auto gap-8">
+<!-- Brand & Location -->
+<div class="text-center md:text-left">
+<a class="font-headline-md text-headline-md text-primary-fixed dark:text-primary font-bold tracking-tight block mb-2" href="#">
+          Yerry's Touch
+        </a>
+<p class="text-inverse-on-surface/80 dark:text-on-surface-variant text-body-md font-body-md">
+          © 2024 Yerry's Touch by Yeron Habtamu. All Rights Reserved. Gullele, Addis Ababa.
+        </p>
+</div>
+<!-- Footer Anchor Links -->
+<nav class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-3">
+<a class="text-inverse-on-surface/80 dark:text-on-surface-variant text-body-md font-body-md hover:text-primary-fixed-dim dark:hover:text-primary transition-colors duration-200 hover:translate-x-0.5" href="#masterclasses">
+          Bridal Masterclasses
+        </a>
+<a class="text-inverse-on-surface/80 dark:text-on-surface-variant text-body-md font-body-md hover:text-primary-fixed-dim dark:hover:text-primary transition-colors duration-200 hover:translate-x-0.5" href="#sanitation">
+          Luxury Pigments &amp; Sanitation
+        </a>
+<a class="text-inverse-on-surface/80 dark:text-on-surface-variant text-body-md font-body-md hover:text-primary-fixed-dim dark:hover:text-primary transition-colors duration-200 hover:translate-x-0.5" href="#direction">
+          Studio Direction
+        </a>
+<a class="text-inverse-on-surface/80 dark:text-on-surface-variant text-body-md font-body-md hover:text-primary-fixed-dim dark:hover:text-primary transition-colors duration-200 hover:translate-x-0.5" href="#appointments">
+          Private Appointments
+        </a>
+<a class="text-inverse-on-surface/80 dark:text-on-surface-variant text-body-md font-body-md hover:text-primary-fixed-dim dark:hover:text-primary transition-colors duration-200 hover:translate-x-0.5" href="#terms">
+          Terms &amp; Bridal Policy
+        </a>
+</nav>
+</div>
+</footer>
+</body></html>

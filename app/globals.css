@@ -1,0 +1,218 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-300: #E5C378;
+  --color-gold-400: #D4AF37;
+  --color-gold-500: #B89425;
+  --color-gold-600: #917316;
+  --color-gold-700: #735C00;
+  
+  --color-espresso: #1E1513;
+  --color-espresso-light: #2E211E;
+  --color-espresso-dark: #140D0C;
+  
+  --color-velvet: #0F0C0B;
+  --color-velvet-rich: #181312;
+
+  --color-ivory: #FAF7F2;
+  --color-ivory-warm: #FDFBF7;
+  --color-rose-milk: #F9F1EE;
+  --color-surface: #FCF9F4;
+
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-plus-jakarta), "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #1E1513;
+    font-family: var(--font-plus-jakarta), "Plus Jakarta Sans", system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-playfair), "Playfair Display", Georgia, serif;
+  }
+}
+
+/* Luxury Architectural Fluted Wood & Specular Atmospheres */
+.bg-fluted-texture {
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(30, 21, 19, 0.025) 0px,
+    rgba(30, 21, 19, 0.025) 2px,
+    transparent 2px,
+    transparent 16px
+  );
+}
+
+.bg-fluted-dark {
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(212, 175, 55, 0.035) 0px,
+    rgba(212, 175, 55, 0.035) 2px,
+    transparent 2px,
+    transparent 20px
+  );
+}
+
+/* Glassmorphism Luxury Surfaces */
+.glass-luxury-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.glass-luxury-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-luxury-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(212, 175, 55, 0.22), 0 6px 16px rgba(30, 21, 19, 0.05);
+  border-color: rgba(212, 175, 55, 0.65);
+}
+
+.glass-dark-card {
+  background: rgba(20, 15, 14, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+/* Metallic Gold Typography & Borders */
+.gold-foil-text {
+  background: linear-gradient(135deg, #735C00 0%, #D4AF37 45%, #E5C378 70%, #9A7B00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #E5C378 0%, #D4AF37 50%, #B89425 100%);
+}
+
+.gold-gradient-hover {
+  background-size: 200% 200%;
+  transition: background-position 0.5s ease;
+}
+
+.gold-gradient-hover:hover {
+  background-position: right center;
+}
+
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.38);
+}
+
+/* Golden Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 100%
+  );
+  animation: shimmer 2.8s infinite;
+}
+
+/* Cathedral Arch Frame from Stitch Lookbook */
+.cathedral-arch {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+}
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: slowSpin 24s linear infinite;
+}
+
+/* Infinite Horizontal Marquee Rows */
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 45s linear infinite;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marqueeRight 45s linear infinite;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+/* Custom Scrollbar for Luxury Feel */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.75);
+}
