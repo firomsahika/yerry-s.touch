@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Yerry's Touch",
     images: [
       {
-        url: "/Gallery/yerry.jpg",
+        url: "/images/yerry.jpg",
         width: 1200,
         height: 630,
         alt: "Yerry's Touch Luxury Makeup Studio in Gullele, Addis Ababa",

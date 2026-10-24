@@ -13,9 +13,9 @@ interface NavbarProps {
 const navItems = [
   { label: "About", href: "/#about" },
   { label: "Services", href: "/#specialties" },
-  { label: "Standard", href: "/#different" },
+  { label: "Experience", href: "/#different" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Praise", href: "/#testimonials" },
+  { label: "Reviews", href: "/#testimonials" },
 ];
 
 export default function Navbar({ onOpenBooking }: NavbarProps) {
@@ -58,12 +58,12 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           scrolled || isGalleryPage
-            ? "bg-[#FAF7F2]/95 backdrop-blur-md shadow-[0_2px_15px_-3px_rgba(212,175,55,0.15)] border-b border-gold/20 py-2 sm:py-2.5"
-            : "bg-gradient-to-b from-black/70 via-black/30 to-transparent py-3 sm:py-4"
+            ? "bg-[#FAF7F2]/95 backdrop-blur-md shadow-sm border-b border-espresso/5 py-3"
+            : "bg-gradient-to-b from-black/60 via-black/20 to-transparent py-4"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between">
-          {/* Brand Logo & Title (Clean, no 'Haute Bridal...' subtext) */}
+          {/* Brand Logo & Title */}
           <Link
             href="/"
             className="flex items-center gap-2.5 group focus:outline-none"
@@ -72,11 +72,11 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
             <div
               className={`rounded-full flex items-center justify-center transition-all duration-300 ${
                 scrolled || isGalleryPage
-                  ? "w-8 h-8 bg-gold/15 border border-gold/40 text-espresso shadow-sm"
-                  : "w-8 sm:w-9 h-8 sm:h-9 bg-white/10 backdrop-blur-md border border-gold/40 text-white shadow-gold"
-              } group-hover:scale-105 group-hover:border-gold`}
+                  ? "w-8 h-8 bg-gold-100 border border-gold-300/60 text-gold-800 shadow-sm"
+                  : "w-8 h-8 bg-white/10 backdrop-blur-md border border-white/20 text-white"
+              } group-hover:scale-105`}
             >
-              <span className="text-base sm:text-lg select-none">🦋</span>
+              <span className="font-serif text-sm font-bold tracking-tight">Y</span>
             </div>
             <span
               className={`font-serif text-lg sm:text-xl font-bold tracking-tight block leading-none transition-colors duration-300 ${

@@ -30,10 +30,10 @@ export default function BookingAndLocation() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24 relative bg-[#F6F3EE] bg-fluted-texture overflow-hidden">
+    <section id="contact" className="py-16 sm:py-24 relative bg-[#F7F4EF] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          {/* Left Column: Studio Sanctuary, Direction Guidance & Concierge Messengers */}
+          {/* Left Column */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -41,23 +41,23 @@ export default function BookingAndLocation() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-5 space-y-6"
           >
-            <div className="space-y-2">
-              <div className="inline-flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
-                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-gold-700">
-                  Studio Sanctuary
+            <div className="space-y-3">
+              <div className="inline-flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-gold-600" />
+                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-700">
+                  Location &amp; Contact
                 </span>
               </div>
-              <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-espresso">
-                Visit Our <span className="gold-foil-text italic">Gullele Suite</span>
+              <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-espresso">
+                Visit Our <span className="italic font-serif text-gold-600">Gullele Studio</span>
               </h2>
-              <p className="text-xs sm:text-sm text-espresso/70 leading-relaxed">
-                A serene haven in Addis Ababa where you can relax with fresh buna and prepare for life&apos;s grandest celebrations.
+              <p className="text-sm text-espresso/70 leading-relaxed font-light">
+                A serene space in Addis Ababa where you can relax and prepare for your special day.
               </p>
             </div>
 
-            {/* Studio Address & Schedule Card (Compact) */}
-            <div className="glass-luxury-card p-5 sm:p-6 rounded-2xl border border-gold/35 shadow-luxury space-y-4 bg-white/85">
+            {/* Studio Address & Schedule Card */}
+            <div className="p-6 rounded-2xl border border-espresso/5 shadow-sm space-y-4 bg-white">
               <div className="flex items-start gap-3">
                 <div className="w-9 h-9 rounded-xl bg-gold/15 border border-gold/30 text-gold-700 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <MapPin className="w-4 h-4" />
@@ -162,7 +162,7 @@ export default function BookingAndLocation() {
             </div>
           </motion.div>
 
-          {/* Right Column: Consultation Form (Compact) */}
+          {/* Right Column: Consultation Form */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -170,17 +170,13 @@ export default function BookingAndLocation() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-7"
           >
-            <div className="glass-luxury-card p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-gold/35 shadow-luxury bg-white/95 relative">
+            <div className="p-6 sm:p-8 rounded-3xl border border-espresso/5 shadow-sm bg-white relative">
               <div className="space-y-1 mb-6">
-                <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-gold/15 border border-gold/30 text-gold-700 text-[10px] font-semibold uppercase tracking-wider">
-                  <Sparkles className="w-3 h-3" />
-                  Bridal Calendar 2024 / 2025
-                </div>
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-espresso">
-                  Request a Consultation
+                <h3 className="font-serif text-xl sm:text-2xl font-normal text-espresso">
+                  Request an Appointment
                 </h3>
-                <p className="text-xs text-espresso/70">
-                  Share your wedding or event vision below. Yeron will respond within 4 hours.
+                <p className="text-xs sm:text-sm text-espresso/70 font-light">
+                  Tell us about your event vision. We will follow up promptly to confirm details.
                 </p>
               </div>
 
@@ -188,21 +184,21 @@ export default function BookingAndLocation() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-wider text-espresso/80 mb-1">
+                      <label className="block text-[11px] font-medium uppercase tracking-wider text-espresso/70 mb-1">
                         Full Name *
                       </label>
                       <input
                         type="text"
                         required
-                        placeholder="e.g. Rahel Hailu"
+                        placeholder="Your name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-3.5 py-2 rounded-xl bg-ivory/80 border border-espresso/15 focus:border-gold focus:ring-1 focus:ring-gold text-xs text-espresso outline-none transition-all"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-ivory/60 border border-espresso/10 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 text-xs text-espresso outline-none transition-all"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-wider text-espresso/80 mb-1">
+                      <label className="block text-[11px] font-medium uppercase tracking-wider text-espresso/70 mb-1">
                         Phone / Telegram *
                       </label>
                       <input
@@ -211,31 +207,31 @@ export default function BookingAndLocation() {
                         placeholder="+251 9... or @username"
                         value={formData.contact}
                         onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
-                        className="w-full px-3.5 py-2 rounded-xl bg-ivory/80 border border-espresso/15 focus:border-gold focus:ring-1 focus:ring-gold text-xs text-espresso outline-none transition-all"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-ivory/60 border border-espresso/10 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 text-xs text-espresso outline-none transition-all"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-wider text-espresso/80 mb-1">
+                      <label className="block text-[11px] font-medium uppercase tracking-wider text-espresso/70 mb-1">
                         Desired Service
                       </label>
                       <select
                         value={formData.service}
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                        className="w-full px-3.5 py-2 rounded-xl bg-ivory/80 border border-espresso/15 focus:border-gold focus:ring-1 focus:ring-gold text-xs text-espresso outline-none transition-all cursor-pointer"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-ivory/60 border border-espresso/10 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 text-xs text-espresso outline-none transition-all cursor-pointer"
                       >
                         <option>Ethiopian Bridal &amp; Melse Package</option>
                         <option>Wedding Day Bride Only</option>
                         <option>High-Fashion / Editorial Shoot</option>
-                        <option>Graduation / Birthday Glam</option>
+                        <option>Graduation / Celebration Glam</option>
                         <option>Professional MUA Masterclass (1-on-1)</option>
                       </select>
                     </div>
 
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-wider text-espresso/80 mb-1">
+                      <label className="block text-[11px] font-medium uppercase tracking-wider text-espresso/70 mb-1">
                         Event Date *
                       </label>
                       <input
@@ -243,42 +239,42 @@ export default function BookingAndLocation() {
                         required
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="w-full px-3.5 py-2 rounded-xl bg-ivory/80 border border-espresso/15 focus:border-gold focus:ring-1 focus:ring-gold text-xs text-espresso outline-none transition-all"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-ivory/60 border border-espresso/10 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 text-xs text-espresso outline-none transition-all"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider text-espresso/80 mb-1">
+                    <label className="block text-[11px] font-medium uppercase tracking-wider text-espresso/70 mb-1">
                       Event Venue / Location in Addis Ababa
                     </label>
                     <input
                       type="text"
-                      placeholder="e.g. Skylight Hotel / Sheraton / Gullele Studio"
+                      placeholder="e.g. Skylight Hotel / Gullele Studio"
                       value={formData.venue}
                       onChange={(e) => setFormData({ ...formData, venue: e.target.value })}
-                      className="w-full px-3.5 py-2 rounded-xl bg-ivory/80 border border-espresso/15 focus:border-gold focus:ring-1 focus:ring-gold text-xs text-espresso outline-none transition-all"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-ivory/60 border border-espresso/10 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 text-xs text-espresso outline-none transition-all"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider text-espresso/80 mb-1">
-                      Special Requests &amp; Bridal Party Count
+                    <label className="block text-[11px] font-medium uppercase tracking-wider text-espresso/70 mb-1">
+                      Notes or Special Requests
                     </label>
                     <textarea
                       rows={2}
-                      placeholder="Tell us about your dress style, party size, or skin type..."
+                      placeholder="Share any details about your dress, skin, or timeline..."
                       value={formData.notes}
                       onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                      className="w-full px-3.5 py-2 rounded-xl bg-ivory/80 border border-espresso/15 focus:border-gold focus:ring-1 focus:ring-gold text-xs text-espresso outline-none transition-all resize-none"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-ivory/60 border border-espresso/10 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 text-xs text-espresso outline-none transition-all resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-xl gold-gradient-bg text-espresso text-[11px] font-bold uppercase tracking-widest shadow-gold hover:shadow-gold-lg transition-all active:scale-[0.99] flex items-center justify-center gap-1.5 animate-shimmer"
+                    className="w-full py-3.5 rounded-xl bg-espresso hover:bg-gold-700 text-ivory text-xs font-semibold uppercase tracking-wider transition-colors shadow-sm flex items-center justify-center gap-2"
                   >
-                    <span>Confirm &amp; Reserve Consultation Date</span>
+                    <span>Submit Request</span>
                   </button>
 
                   <div className="flex items-center justify-center gap-1.5 text-espresso/60 text-[10px] pt-0.5">

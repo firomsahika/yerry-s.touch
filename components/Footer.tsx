@@ -19,8 +19,8 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-5 space-y-3">
             <Link href="/" className="inline-flex items-center gap-2.5 group">
-              <div className="w-8 h-8 rounded-full bg-gold/20 border border-gold/40 flex items-center justify-center text-base group-hover:scale-105 transition-transform">
-                🦋
+              <div className="w-8 h-8 rounded-full bg-gold-500/20 border border-gold-400/40 flex items-center justify-center font-serif text-sm font-bold text-gold-300 group-hover:scale-105 transition-transform">
+                Y
               </div>
               <span className="font-serif text-xl font-bold tracking-tight text-ivory block leading-none">
                 Yerry&apos;s Touch
@@ -28,12 +28,12 @@ export default function Footer() {
             </Link>
 
             <p className="text-xs text-ivory/70 max-w-sm font-light leading-relaxed">
-              Bespoke bridal, celebratory, and editorial beauty studio led by certified master makeup artist Yeron Habtamu in Gullele, Addis Ababa.
+              Bespoke bridal, celebratory, and editorial beauty studio led by certified makeup artist Yeron Habtamu in Gullele, Addis Ababa.
             </p>
 
-            <div className="pt-1 flex items-center gap-1.5 text-[11px] text-gold-300">
-              <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
-              <span>Gullele, In front of Medhanealem School • Addis Ababa, Ethiopia</span>
+            <div className="pt-1 flex items-center gap-1.5 text-xs text-gold-300/80 font-light">
+              <MapPin className="w-3.5 h-3.5 flex-shrink-0 text-gold-400" />
+              <span>Gullele, in front of Medhanealem School • Addis Ababa</span>
             </div>
           </div>
 
@@ -42,35 +42,35 @@ export default function Footer() {
             <h4 className="text-[11px] font-bold uppercase tracking-widest text-gold-300">
               Navigation
             </h4>
-            <ul className="space-y-1.5 text-[11px] uppercase tracking-wider font-medium text-ivory/75">
+            <ul className="space-y-2 text-xs font-light text-ivory/70">
               <li>
-                <Link href="/#about" className="hover:text-gold-300 transition-colors">
-                  Artisan Biography
+                <Link href="/#about" className="hover:text-gold-200 transition-colors">
+                  Our Story
                 </Link>
               </li>
               <li>
-                <Link href="/#services" className="hover:text-gold-300 transition-colors">
-                  Bridal Packages
+                <Link href="/#specialties" className="hover:text-gold-200 transition-colors">
+                  Studio Services
                 </Link>
               </li>
               <li>
-                <Link href="/#different" className="hover:text-gold-300 transition-colors">
-                  Standard
+                <Link href="/#different" className="hover:text-gold-200 transition-colors">
+                  The Experience
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="hover:text-gold-300 transition-colors">
-                  Lookbook Archives
+                <Link href="/gallery" className="hover:text-gold-200 transition-colors">
+                  Lookbook Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/#testimonials" className="hover:text-gold-300 transition-colors">
-                  Bridal Praise
+                <Link href="/#testimonials" className="hover:text-gold-200 transition-colors">
+                  Client Reviews
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" className="hover:text-gold-300 transition-colors">
-                  Contact &amp; Reserve
+                <Link href="/#contact" className="hover:text-gold-200 transition-colors">
+                  Contact &amp; Booking
                 </Link>
               </li>
             </ul>

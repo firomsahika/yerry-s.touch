@@ -80,68 +80,60 @@ export default function TestimonialSection() {
   };
 
   return (
-    <section id="testimonials" className="py-16 sm:py-24 relative bg-ivory bg-fluted-texture overflow-hidden">
+    <section id="testimonials" className="py-16 sm:py-24 relative bg-ivory overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         {/* Section Heading */}
-        <div className="text-center max-w-xl mx-auto space-y-2 mb-12">
-          <div className="inline-flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
-            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-gold-700">
-              Bridal Praise
+        <div className="text-center max-w-xl mx-auto space-y-3 mb-12">
+          <div className="inline-flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-gold-600" />
+            <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-700">
+              Client Reflections
             </span>
           </div>
 
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-espresso">
-            Words from Our <span className="gold-foil-text italic">Glowing Brides</span>
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-espresso">
+            Kind Words from <span className="italic font-serif text-gold-600">Our Brides</span>
           </h2>
 
-          <p className="text-xs sm:text-sm text-espresso/70 leading-relaxed">
-            Heartfelt reflections and reviews from wedding mornings across Addis Ababa.
+          <p className="text-sm text-espresso/70 leading-relaxed font-light">
+            Reflections and experiences from wedding mornings across Addis Ababa.
           </p>
         </div>
 
-        {/* Carousel Container (Compact, luxury scale) */}
+        {/* Carousel Container */}
         <div className="max-w-3xl mx-auto relative">
-          <div className="glass-luxury-card rounded-2xl sm:rounded-3xl p-6 sm:p-10 border border-gold/35 shadow-luxury relative min-h-[270px] flex flex-col justify-between">
-            <div className="absolute top-5 right-6 text-gold-300/30 pointer-events-none">
-              <Quote className="w-14 h-14 -scale-x-100" />
-            </div>
-
+          <div className="rounded-3xl p-7 sm:p-10 bg-white border border-espresso/5 shadow-sm relative min-h-[250px] flex flex-col justify-between">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
-                initial={{ opacity: 0, y: 12 }}
+                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -12 }}
-                transition={{ duration: 0.35 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
                 className="space-y-4 relative z-10"
               >
                 {/* 5-Star Row */}
                 <div className="flex items-center gap-1 text-gold-500">
                   {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-gold-500" />
+                    <Star key={i} className="w-4 h-4 fill-gold-400 text-gold-400" />
                   ))}
-                  <span className="ml-2 px-2 py-0.5 rounded-full bg-gold/15 text-gold-800 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 border border-gold/30">
-                    <CheckCircle2 className="w-3 h-3" />
-                    Verified Bride
-                  </span>
                 </div>
 
-                {/* Quote Text (Smaller, refined serif) */}
-                <p className="font-serif text-sm sm:text-base text-espresso italic leading-relaxed">
+                {/* Quote Text */}
+                <p className="font-serif text-base sm:text-lg text-espresso/90 italic leading-relaxed font-normal">
                   &ldquo;{testimonials[currentIndex].quote}&rdquo;
                 </p>
 
                 {/* Author Info */}
-                <div className="flex items-center gap-3 pt-3 border-t border-gold/20">
-                  <div className="w-9 h-9 rounded-full bg-gold/20 border border-gold/40 flex items-center justify-center font-serif font-bold text-gold-800 text-sm">
+                <div className="flex items-center gap-3 pt-3 border-t border-espresso/5">
+                  <div className="w-9 h-9 rounded-full bg-gold-50 border border-gold-200 flex items-center justify-center font-serif font-semibold text-gold-800 text-xs">
                     {testimonials[currentIndex].initials}
                   </div>
                   <div>
                     <h4 className="font-serif text-sm font-bold text-espresso">
                       {testimonials[currentIndex].name}
                     </h4>
-                    <p className="text-[10px] uppercase tracking-wider text-gold-700 font-semibold">
+                    <p className="text-xs text-espresso/60 font-light">
                       {testimonials[currentIndex].role} • {testimonials[currentIndex].venue}
                     </p>
                   </div>

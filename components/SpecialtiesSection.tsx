@@ -7,12 +7,7 @@ import {
   Scissors,
   Eye,
   GraduationCap,
-  Crown,
-  CheckCircle2,
-  Calendar,
-  BookOpen,
   ArrowRight,
-  ShieldCheck,
   Award,
 } from "lucide-react";
 
@@ -46,64 +41,56 @@ const salonServices = [
   {
     id: "makeup",
     title: "Makeup Artistry",
-    tagline: "Bridal, Melse & Red Carpet",
+    tagline: "Bridal, Melse & Occasions",
     icon: Sparkles,
-    badge: "Signature Craft",
     description:
-      "Haute bridal complexion design, traditional Habesha Melse crowning glam, and sculpted 4K editorial finishes tailored to every skin undertone.",
+      "Radiant bridal complexion design, traditional Habesha Melse glam, and refined editorial finishes tailored to your unique skin tones.",
     offerings: [
-      "Royal Ethiopian Wedding & Melse Glam",
-      "Editorial & High-Fashion 4K Strobes",
-      "Milestone, Birthday & Graduation Looks",
-      "Pre-Ceremony Dermal Hydration Shield",
+      "Royal Bridal & Traditional Melse",
+      "Editorial & Celebration Looks",
+      "Skin Hydration & Long-Wear Finish",
     ],
     duration: "1.5 – 3 Hours",
   },
   {
     id: "hair",
     title: "Hair Styling",
-    tagline: "Bridal Updos & Traditional Braids",
+    tagline: "Bridal Updos & Traditional Styles",
     icon: Scissors,
-    badge: "Couture Styling",
     description:
-      "Architectural bridal styling, Hollywood waves, traditional Ethiopian crowning hair architectures, and secure veil & kaba setting.",
+      "Elegant wedding hairstyles, romantic chignons, classic waves, and traditional Habesha hair styling with secure veil placement.",
     offerings: [
-      "Traditional Royal Crowning & Kaba Setting",
-      "Sculpted Bridal Chignons & Romantic Updos",
-      "Hollywood Glam Waves & Sleek Ponytails",
-      "Traditional Habesha Braiding & Weaving",
+      "Bridal Updos & Romantic Waves",
+      "Traditional Hair & Kaba Setting",
+      "Veil & Accessory Placement",
     ],
     duration: "1 – 2.5 Hours",
   },
   {
     id: "ilash",
-    title: "Ilash (Eyelash)",
-    tagline: "Custom 3D Mink & Silk Mapping",
+    title: "Eyelash Artistry",
+    tagline: "Custom Extensions & Enhancements",
     icon: Eye,
-    badge: "Weightless Volume",
     description:
-      "Bespoke lash styling customized for each eye architecture. From fluttery natural extensions to opulent Russian 3D volume mapping.",
+      "Natural, weightless eyelash extensions and treatments designed to complement your eye shape with comfort and longevity.",
     offerings: [
-      "3D Silk & Mink Individual Extensions",
-      "Custom Eye-Shape Lash Mapping",
-      "Weightless Volume & Hybrid Sets",
-      "Keratin Lash Infusions & Tinting",
+      "Classic & Hybrid Extensions",
+      "Eye-Shape Mapping & Styling",
+      "Gentle Infusions & Tinting",
     ],
     duration: "1 – 2 Hours",
   },
   {
     id: "nail",
-    title: "Nail Artistry",
+    title: "Nail Care & Artistry",
     tagline: "Gel, Acrylic & Bridal Manicures",
     icon: NailPolishIcon,
-    badge: "Artisanal Care",
     description:
-      "Immaculate nail sculpture, Russian dry manicures, longwear gel overlays, and bespoke gold leaf bridal accents that photograph flawlessly.",
+      "Meticulous nail care, gentle cuticle preparation, long-wear gel polish, and elegant bridal nail designs.",
     offerings: [
-      "Luxury Bridal Gel Extensions & Acrylics",
-      "Champagne Gold Leaf & Chrome Accents",
-      "Sterilized Russian Cuticle Care & Shape",
-      "Longwear Chip-Resistant Gel Polish",
+      "Bridal Gel & Acrylic Overlays",
+      "Gentle Cuticle Care & Shaping",
+      "Chip-Resistant Longwear Polish",
     ],
     duration: "45 Min – 1.5 Hours",
   },
@@ -113,66 +100,58 @@ const salonServices = [
 const academyCourses = [
   {
     id: "academy-makeup",
-    title: "Beauty & Makeup Masterclass",
-    tagline: "Pro Bridal & Melanin Complexion",
+    title: "Makeup Artistry Course",
+    tagline: "Technique & Melanin Complexions",
     icon: Sparkles,
-    badge: "Accredited Intensive",
     duration: "5 to 10 Days",
     description:
-      "Comprehensive mastery of color theory, undertone neutralization for African complexions, 16-hr sweat-proof chemistry, and bridal business pacing.",
+      "Hands-on masterclass covering color theory, undertone matching for diverse African complexions, and long-wear bridal techniques.",
     syllabus: [
-      "Melanin undertone & foundation formulation",
-      "Cut-crease, smokey & traditional eyes",
-      "Bridal emergency kits & live client timing",
-      "Sterilization & hygiene certification",
+      "Color theory & foundation matching",
+      "Bridal pacing & live model practice",
+      "Sanitation & professional hygiene",
     ],
   },
   {
     id: "academy-hair",
     title: "Hair Styling Academy",
-    tagline: "Bridal Sculpting & Traditional Crown",
+    tagline: "Bridal Updos & Traditional Styles",
     icon: Scissors,
-    badge: "Hands-on Workshop",
     duration: "3 to 7 Days",
     description:
-      "Professional training in bridal updos, texture preparation, traditional Ethiopian crowning structures, veil mechanics, and heat longevity.",
+      "Practical instruction in bridal chignons, modern waves, traditional Ethiopian crowning structures, and secure veil placement.",
     syllabus: [
-      "Crown pin architecture & kaba balancing",
-      "Bridal chignon & modern red-carpet waves",
-      "Thermal styling & weather-proof hold",
-      "Hairpiece integration & padding craft",
+      "Bridal updos & wave techniques",
+      "Traditional hair setting & kaba balance",
+      "Hair prep & heat styling longevity",
     ],
   },
   {
     id: "academy-ilash",
-    title: "Ilash (Eyelash) Certification",
-    tagline: "Classic, Hybrid & Russian Volume",
+    title: "Lash Extension Certification",
+    tagline: "Classic, Hybrid & Volume Mapping",
     icon: Eye,
-    badge: "Certified Specialist",
     duration: "3 to 5 Days",
     description:
-      "Master the delicate craft of individual lash extensions, glue polymer safety, eye anatomy mapping, and high-retention isolation.",
+      "Step-by-step guidance on gentle lash isolation, proper adhesive use, eye shape mapping, and aftercare.",
     syllabus: [
-      "Sanitary eye isolation & glue chemistry",
-      "Classic, hybrid & volume fan making",
-      "Client eye morphology & styling charts",
-      "Aftercare, refills & safe lash removals",
+      "Safe isolation & adhesive safety",
+      "Classic & volume fan techniques",
+      "Client eye morphology & styling",
     ],
   },
   {
     id: "academy-nail",
-    title: "Nail Artistry Certification",
-    tagline: "Gel Sculpture & Salon Technique",
+    title: "Nail Artistry Course",
+    tagline: "Gel Sculpture & Salon Fundamentals",
     icon: NailPolishIcon,
-    badge: "Professional Diploma",
     duration: "4 to 7 Days",
     description:
-      "Step into the high-demand world of professional nail tech. Learn apex sculpting, Russian e-file cuticle techniques, and luxury bridal nail art.",
+      "Hands-on training in professional gel sculpting, nail prep, clean cuticle techniques, and bridal nail styling.",
     syllabus: [
-      "Natural nail health & e-file preparation",
-      "Acrylic extension & hard gel apex build",
-      "Modern French, chrome & 3D nail art",
-      "Salon sanitation & client booking system",
+      "Nail health & gentle prep",
+      "Gel sculpting & apex structure",
+      "Bridal French & natural nail art",
     ],
   },
 ];
@@ -181,223 +160,207 @@ export default function SpecialtiesSection({ onOpenBooking }: SpecialtiesSection
   const [activeTab, setActiveTab] = useState<"salon" | "school">("salon");
 
   return (
-    <section id="specialties" className="py-16 sm:py-24 relative bg-ivory bg-fluted-texture overflow-hidden">
-      {/* Ambient background glows */}
-      <div className="absolute top-1/3 -left-32 w-80 h-80 bg-gold/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-80 h-80 bg-gold-300/10 rounded-full blur-3xl pointer-events-none" />
-
+    <section id="specialties" className="py-16 sm:py-24 relative bg-ivory overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold/15 border border-gold/30 text-gold-700 text-[10px] font-bold uppercase tracking-widest">
-            <Crown className="w-3 h-3" />
-            Specialized Craft &amp; Education
+        <div className="text-center max-w-2xl mx-auto mb-10 space-y-3">
+          <div className="inline-flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-gold-600" />
+            <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-700">
+              Services &amp; Academy
+            </span>
           </div>
 
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-espresso">
-            Studio Services &amp;{" "}
-            <span className="gold-foil-text italic">Beauty School</span>
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-espresso">
+            Artistry &amp; <span className="italic font-serif text-gold-600">Professional Training</span>
           </h2>
 
-          <p className="text-xs sm:text-sm text-espresso/70 leading-relaxed max-w-lg mx-auto">
-            Explore our 4 core salon pillars—<strong className="text-espresso font-semibold">Makeup, Hair, Ilash, and Nail</strong>—and our accredited academy courses taught directly by Yeron Habtamu in Gullele.
+          <p className="text-sm text-espresso/70 leading-relaxed max-w-md mx-auto font-light">
+            Bespoke studio appointments and hands-on academy courses taught by Yeron Habtamu.
           </p>
 
-          {/* Interactive Dual-Mode Switcher */}
-          <div className="pt-4 flex justify-center">
-            <div className="inline-flex p-1 rounded-full bg-white/80 border border-gold/35 shadow-sm">
+          {/* Interactive Switcher */}
+          <div className="pt-3 flex justify-center">
+            <div className="inline-flex p-1 rounded-full bg-espresso/5 border border-espresso/10">
               <button
                 onClick={() => setActiveTab("salon")}
-                className={`px-4 sm:px-5 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider transition-all duration-300 ${
+                className={`px-5 py-2 rounded-full text-xs font-medium tracking-wider transition-all duration-200 ${
                   activeTab === "salon"
-                    ? "gold-gradient-bg text-espresso shadow-gold scale-102"
+                    ? "bg-white text-espresso shadow-sm"
                     : "text-espresso/70 hover:text-espresso"
                 }`}
               >
-                Studio Salon Services (4)
+                Studio Services
               </button>
 
               <button
                 onClick={() => setActiveTab("school")}
-                className={`px-4 sm:px-5 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-1.5 ${
+                className={`px-5 py-2 rounded-full text-xs font-medium tracking-wider transition-all duration-200 flex items-center gap-1.5 ${
                   activeTab === "school"
-                    ? "gold-gradient-bg text-espresso shadow-gold scale-102"
+                    ? "bg-white text-espresso shadow-sm"
                     : "text-espresso/70 hover:text-espresso"
                 }`}
               >
                 <GraduationCap className="w-3.5 h-3.5" />
-                <span>Beauty School &amp; Academy (4)</span>
+                <span>Beauty Academy</span>
               </button>
             </div>
           </div>
         </div>
 
-        {/* Content Tabs Animation */}
+        {/* Content Tabs */}
         <AnimatePresence mode="wait">
           {activeTab === "salon" ? (
-            /* TAB 1: STUDIO SALON SERVICES (Makeup, Hair, Ilash, Nail) */
+            /* TAB 1: STUDIO SERVICES */
             <motion.div
               key="salon"
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -15 }}
-              transition={{ duration: 0.35 }}
-              className="space-y-8"
+              transition={{ duration: 0.3 }}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
             >
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                {salonServices.map((service, index) => {
-                  const Icon = service.icon;
-                  return (
-                    <motion.div
-                      key={service.id}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.4, delay: index * 0.06 }}
-                      whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                      className="p-5 rounded-2xl glass-luxury-card border border-gold/30 hover:border-gold/60 shadow-luxury flex flex-col justify-between group transition-all"
-                    >
-                      <div className="space-y-3">
-                        <div className="flex items-center justify-between">
-                          <div className="w-10 h-10 rounded-xl bg-gold/15 border border-gold/30 text-gold-700 flex items-center justify-center group-hover:bg-gold group-hover:text-espresso transition-colors">
-                            <Icon className="w-5 h-5" />
-                          </div>
-                          <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-gold/15 text-gold-800 border border-gold/30">
-                            {service.badge}
-                          </span>
-                        </div>
-
-                        <div>
-                          <h3 className="font-serif text-lg font-bold text-espresso group-hover:text-gold-700 transition-colors">
-                            {service.title}
-                          </h3>
-                          <span className="text-[10px] font-semibold text-gold-700 block mt-0.5">
-                            {service.tagline}
-                          </span>
-                          <p className="text-[11px] text-espresso/75 mt-1.5 leading-relaxed">
-                            {service.description}
-                          </p>
-                        </div>
-
-                        <div className="pt-2 border-t border-espresso/10 space-y-1.5">
-                          {service.offerings.map((item, oIdx) => (
-                            <div key={oIdx} className="flex items-start gap-1.5 text-[11px] text-espresso/80">
-                              <CheckCircle2 className="w-3 h-3 text-gold-600 flex-shrink-0 mt-0.5" />
-                              <span>{item}</span>
-                            </div>
-                          ))}
-                        </div>
+              {salonServices.map((service, index) => {
+                const Icon = service.icon;
+                return (
+                  <motion.div
+                    key={service.id}
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                    className="p-6 rounded-2xl bg-white border border-espresso/5 shadow-sm flex flex-col justify-between group transition-all"
+                  >
+                    <div className="space-y-3">
+                      <div className="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center">
+                        <Icon className="w-5 h-5" />
                       </div>
 
-                      <div className="pt-4 mt-4 border-t border-espresso/10 flex items-center justify-between">
-                        <span className="text-[10px] text-espresso/60 font-medium">
-                          Duration: {service.duration}
+                      <div>
+                        <h3 className="font-serif text-lg font-bold text-espresso">
+                          {service.title}
+                        </h3>
+                        <span className="text-[11px] font-medium text-gold-700 block mt-0.5">
+                          {service.tagline}
                         </span>
-                        <button
-                          onClick={() => onOpenBooking(service.title)}
-                          className="px-3 py-1.5 rounded-lg gold-gradient-bg text-espresso text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 shadow-sm hover:shadow-gold transition-all"
-                        >
-                          <span>Book</span>
-                          <ArrowRight className="w-3 h-3" />
-                        </button>
+                        <p className="text-xs text-espresso/70 mt-2 leading-relaxed font-light">
+                          {service.description}
+                        </p>
                       </div>
-                    </motion.div>
-                  );
-                })}
-              </div>
+
+                      <div className="pt-3 border-t border-espresso/5 space-y-1.5">
+                        {service.offerings.map((item, oIdx) => (
+                          <div key={oIdx} className="text-xs text-espresso/75 flex items-center gap-2">
+                            <span className="w-1 h-1 rounded-full bg-gold-500" />
+                            <span>{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="pt-4 mt-4 border-t border-espresso/5 flex items-center justify-between">
+                      <span className="text-[11px] text-espresso/60 font-light">
+                        {service.duration}
+                      </span>
+                      <button
+                        onClick={() => onOpenBooking(service.title)}
+                        className="text-xs font-semibold uppercase tracking-wider text-gold-700 hover:text-espresso flex items-center gap-1 transition-colors"
+                      >
+                        <span>Book</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </motion.div>
+                );
+              })}
             </motion.div>
           ) : (
-            /* TAB 2: BEAUTY SCHOOL & ACADEMY (Makeup, Hair, Ilash, Nail) */
+            /* TAB 2: BEAUTY ACADEMY */
             <motion.div
               key="school"
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -15 }}
-              transition={{ duration: 0.35 }}
+              transition={{ duration: 0.3 }}
               className="space-y-6"
             >
-              {/* Academy Credentials Micro Banner */}
-              <div className="p-4 rounded-2xl gold-gradient-bg text-espresso shadow-gold flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-velvet text-gold-300 flex items-center justify-center flex-shrink-0 shadow-md">
+              {/* Academy Overview Banner */}
+              <div className="p-6 rounded-2xl bg-espresso text-ivory flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                <div className="flex items-center gap-3.5">
+                  <div className="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-300 flex items-center justify-center flex-shrink-0">
                     <Award className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-serif text-sm font-bold uppercase tracking-wide">
-                      Yerry&apos;s Touch Academy Certification
+                    <h4 className="font-serif text-base font-medium">
+                      Hands-On Professional Masterclasses
                     </h4>
-                    <p className="text-[11px] font-medium opacity-90">
-                      Accredited professional masterclasses with hands-on live model mentorship from Yeron Habtamu.
+                    <p className="text-xs text-ivory/70 font-light mt-0.5">
+                      Intensive courses with live model practice and mentorship from Yeron Habtamu in Gullele.
                     </p>
                   </div>
                 </div>
 
                 <button
-                  onClick={() => onOpenBooking("Professional MUA Masterclass (1-on-1)")}
-                  className="px-4 py-2 rounded-xl bg-velvet text-ivory hover:text-gold-300 text-[11px] font-bold uppercase tracking-wider transition-colors shadow-md flex-shrink-0"
+                  onClick={() => onOpenBooking("Professional Masterclass Inquiry")}
+                  className="px-5 py-2.5 rounded-full bg-gold-400 hover:bg-gold-300 text-espresso text-xs font-semibold uppercase tracking-wider transition-colors flex-shrink-0"
                 >
-                  Enroll / Inquire Syllabus
+                  Inquire Curriculum
                 </button>
               </div>
 
-              {/* 4 School Courses (Makeup, Hair, Ilash, Nail) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {/* 4 School Courses */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {academyCourses.map((course, index) => {
                   const Icon = course.icon;
                   return (
                     <motion.div
                       key={course.id}
-                      initial={{ opacity: 0, y: 20 }}
+                      initial={{ opacity: 0, y: 15 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.4, delay: index * 0.06 }}
-                      whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                      className="p-5 rounded-2xl bg-white/95 border border-gold/35 hover:border-gold shadow-luxury flex flex-col justify-between group transition-all"
+                      transition={{ duration: 0.4, delay: index * 0.05 }}
+                      className="p-6 rounded-2xl bg-white border border-espresso/5 shadow-sm flex flex-col justify-between group transition-all"
                     >
                       <div className="space-y-3">
                         <div className="flex items-center justify-between">
-                          <div className="w-10 h-10 rounded-xl bg-velvet text-gold-300 flex items-center justify-center group-hover:bg-gold group-hover:text-espresso transition-colors">
+                          <div className="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center">
                             <Icon className="w-5 h-5" />
                           </div>
-                          <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-gold/15 text-gold-800 border border-gold/30">
+                          <span className="text-[10px] font-medium text-gold-700 bg-gold-50 px-2.5 py-0.5 rounded-full">
                             {course.duration}
                           </span>
                         </div>
 
                         <div>
-                          <h3 className="font-serif text-lg font-bold text-espresso group-hover:text-gold-700 transition-colors">
+                          <h3 className="font-serif text-lg font-bold text-espresso">
                             {course.title}
                           </h3>
-                          <span className="text-[10px] font-semibold text-gold-700 block mt-0.5">
+                          <span className="text-[11px] font-medium text-gold-700 block mt-0.5">
                             {course.tagline}
                           </span>
-                          <p className="text-[11px] text-espresso/75 mt-1.5 leading-relaxed">
+                          <p className="text-xs text-espresso/70 mt-2 leading-relaxed font-light">
                             {course.description}
                           </p>
                         </div>
 
-                        <div className="pt-2 border-t border-espresso/10 space-y-1.5">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-espresso/60 block">
-                            Key Curriculum:
-                          </span>
+                        <div className="pt-3 border-t border-espresso/5 space-y-1.5">
                           {course.syllabus.map((topic, tIdx) => (
-                            <div key={tIdx} className="flex items-start gap-1.5 text-[11px] text-espresso/80">
-                              <BookOpen className="w-3 h-3 text-gold-600 flex-shrink-0 mt-0.5" />
+                            <div key={tIdx} className="text-xs text-espresso/75 flex items-center gap-2">
+                              <span className="w-1 h-1 rounded-full bg-gold-500" />
                               <span>{topic}</span>
                             </div>
                           ))}
                         </div>
                       </div>
 
-                      <div className="pt-4 mt-4 border-t border-espresso/10 flex items-center justify-between">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-gold-700 flex items-center gap-1">
-                          <ShieldCheck className="w-3 h-3 text-gold-600" />
-                          Certified
+                      <div className="pt-4 mt-4 border-t border-espresso/5 flex items-center justify-between">
+                        <span className="text-[11px] text-espresso/60 font-light">
+                          Certification
                         </span>
                         <button
                           onClick={() => onOpenBooking(`Academy: ${course.title}`)}
-                          className="px-3 py-1.5 rounded-lg gold-gradient-bg text-espresso text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 shadow-sm hover:shadow-gold transition-all"
+                          className="text-xs font-semibold uppercase tracking-wider text-gold-700 hover:text-espresso flex items-center gap-1 transition-colors"
                         >
                           <span>Apply</span>
-                          <ArrowRight className="w-3 h-3" />
+                          <ArrowRight className="w-3.5 h-3.5" />
                         </button>
                       </div>
                     </motion.div>

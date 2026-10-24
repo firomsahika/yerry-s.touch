@@ -8,65 +8,64 @@ export default function Differentiators() {
   const differentiators = [
     {
       icon: Droplet,
-      title: "Skin-First Architecture",
-      tagline: "Custom Typing & Deep Hydration",
+      title: "Skin-First Approach",
+      tagline: "Deep hydration & gentle prep",
       description:
-        "Every session commences with bespoke dermal analysis, lymphatic drainage massage, and pH-balancing primers. Foundation breathes naturally and remains pristine until the last celebration dance.",
+        "Every session begins with personalized skin preparation and gentle hydration, ensuring your complexion breathes naturally and stays radiant throughout your celebration.",
     },
     {
       icon: ShieldCheck,
-      title: "Hospital-Grade Hygiene",
-      tagline: "Zero Cross-Contamination",
+      title: "Sanitary Excellence",
+      tagline: "Highest hygiene standards",
       description:
-        "Uncompromising sanitary protocol. We implement 70%+ medical-grade isopropyl sterilizations, disposable mascara wands, stainless steel palettes, and sealed brush sets for every client.",
+        "Dedicated sanitization protocols with professional sterilization, clean palettes, and freshly prepped brush sets for every single appointment.",
     },
     {
       icon: Armchair,
-      title: "Private VIP Studio Suite",
-      tagline: "Serene Gullele Sanctuary",
+      title: "Private Studio Space",
+      tagline: "Peaceful Gullele sanctuary",
       description:
-        "Nestled in Gullele across from Medhanealem School, our private suite offers an oasis of bridal tranquility. Enjoy artisanal Ethiopian Buna ceremonies and chilled champagne away from city noise.",
+        "A welcoming, serene studio suite in Gullele across from Medhanealem School, designed for calm, unhurried bridal and beauty appointments.",
     },
   ];
 
   return (
     <section id="different" className="py-16 sm:py-24 relative bg-ivory overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
-        <div className="glass-luxury-card rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-gold/35 shadow-luxury relative overflow-hidden bg-white/80">
-          <div className="absolute inset-0 bg-fluted-texture pointer-events-none opacity-30" />
-
-          {/* Section Heading: 'Standard' */}
-          <div className="text-center max-w-xl mx-auto space-y-2 mb-10 relative z-10">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold/15 border border-gold/30 text-gold-700 text-[10px] font-bold uppercase tracking-widest">
-              <Sparkles className="w-3 h-3" />
-              Standard
+        <div className="rounded-3xl p-6 sm:p-10 lg:p-12 border border-espresso/5 shadow-sm relative overflow-hidden bg-white/70">
+          {/* Section Heading */}
+          <div className="text-center max-w-xl mx-auto space-y-3 mb-10 relative z-10">
+            <div className="inline-flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-gold-600" />
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-700">
+                The Experience
+              </span>
             </div>
 
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-espresso">
+            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-espresso">
               Elevated Artistry,{" "}
-              <span className="gold-foil-text italic">Uncompromising Care</span>
+              <span className="italic font-serif text-gold-600">Thoughtful Care</span>
             </h2>
 
-            <p className="text-xs sm:text-sm text-espresso/70 leading-relaxed">
-              Why Addis Ababa&apos;s most discerning brides and public figures trust Yeron Habtamu with their most photographed mornings.
+            <p className="text-sm text-espresso/70 leading-relaxed font-light">
+              Crafting calm, radiant mornings for brides and clients across Addis Ababa.
             </p>
           </div>
 
-          {/* 3 Pillars Grid (Compact) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 relative z-10">
+          {/* 3 Pillars Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
             {differentiators.map((diff, index) => {
               const Icon = diff.icon;
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                  className="p-5 sm:p-6 rounded-xl bg-white/95 border border-gold/25 hover:border-gold/50 shadow-sm hover:shadow-gold transition-all duration-300 space-y-3"
+                  className="p-6 rounded-2xl bg-white border border-espresso/5 shadow-sm space-y-3"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-gold/15 border border-gold/30 text-gold-700 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center">
                     <Icon className="w-5 h-5" />
                   </div>
 
@@ -74,12 +73,12 @@ export default function Differentiators() {
                     <h3 className="font-serif text-base sm:text-lg font-bold text-espresso">
                       {diff.title}
                     </h3>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-gold-700 block mt-0.5">
+                    <span className="text-[11px] font-medium uppercase tracking-wider text-gold-700 block mt-0.5">
                       {diff.tagline}
                     </span>
                   </div>
 
-                  <p className="text-xs text-espresso/75 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-espresso/70 leading-relaxed font-light">
                     {diff.description}
                   </p>
                 </motion.div>

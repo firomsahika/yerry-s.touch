@@ -89,15 +89,13 @@
   border: 1px solid rgba(212, 175, 55, 0.25);
 }
 
-/* Metallic Gold Typography & Borders */
+/* Clean Natural Gold Typography & Backgrounds */
 .gold-foil-text {
-  background: linear-gradient(135deg, #735C00 0%, #D4AF37 45%, #E5C378 70%, #9A7B00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #B89425;
 }
 
 .gold-gradient-bg {
-  background: linear-gradient(135deg, #E5C378 0%, #D4AF37 50%, #B89425 100%);
+  background: #D4AF37;
 }
 
 .gold-gradient-hover {

@@ -120,7 +120,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-8",
-    src: "/images/Screenshot_20261022_233013_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_233013_TikTok_Lite.jpg",
     alt: "Traditional Ethiopian bridal crowning and wedding ceremony",
     title: "Regal Habesha Heritage Artistry",
     category: "bridal",
@@ -132,7 +132,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-9",
-    src: "/images/Screenshot_20261022_232850_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_232850_TikTok_Lite.jpg",
     alt: "Model skin preparation and contouring demonstration in studio",
     title: "Melanin Undertone Correction Study",
     category: "masterclass",
@@ -144,7 +144,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-10",
-    src: "/images/Screenshot_20261022_232843_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_232843_TikTok_Lite.jpg",
     alt: "Smiling university graduate with radiant celebration glam",
     title: "Commencement Day Glow",
     category: "celebration",
@@ -204,7 +204,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-15",
-    src: "/images/Screenshot_20261022_232837_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_232837_TikTok_Lite.jpg",
     alt: "Celebration glam for university graduate",
     title: "Milestone Celebration Glow",
     category: "celebration",
@@ -216,7 +216,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-16",
-    src: "/images/Screenshot_20261022_233019_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_233019_TikTok_Lite.jpg",
     alt: "Traditional wedding morning bride",
     title: "Heirloom Bridal Poise",
     category: "bridal",
@@ -228,7 +228,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-17",
-    src: "/images/Screenshot_20261022_233251_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_233251_TikTok_Lite.jpg",
     alt: "Masterclass graduation ceremony with custom celebration cake and certificates",
     title: "Academy Graduation Showcase",
     category: "masterclass",
@@ -240,7 +240,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-18",
-    src: "/images/Screenshot_20261022_233039_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_233039_TikTok_Lite.jpg",
     alt: "Reception glam with sculpted eye contour",
     title: "Nocturne Evening Reception",
     category: "bridal",
@@ -252,7 +252,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-19",
-    src: "/images/Screenshot_20261022_233145_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_233145_TikTok_Lite.jpg",
     alt: "Birthday and milestone celebration look",
     title: "Anniversary & Gala Glow",
     category: "celebration",
@@ -264,7 +264,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-20",
-    src: "/images/Screenshot_20261022_233024_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_233024_TikTok_Lite.jpg",
     alt: "Studio glam suite styling moments",
     title: "Gullele Suite Preparation",
     category: "masterclass",
@@ -276,7 +276,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-21",
-    src: "/images/Screenshot_20261022_231433_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_231433_TikTok_Lite.jpg",
     alt: "Live demonstration of skin hydration prep",
     title: "Dermal Prep Masterclass",
     category: "masterclass",
@@ -300,7 +300,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-23",
-    src: "/images/Screenshot_20261022_231734_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_231734_TikTok_Lite.jpg",
     alt: "Live client transformation in studio",
     title: "Complexion Transformation",
     category: "masterclass",
@@ -312,7 +312,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-24",
-    src: "/images/Screenshot_20261022_233114_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_233114_TikTok_Lite.jpg",
     alt: "Celebration beauty with natural fluttery lashes",
     title: "Soft Radiant Glam",
     category: "celebration",
@@ -336,7 +336,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-26",
-    src: "/images/Screenshot_20261022_232911_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_232911_TikTok_Lite.jpg",
     alt: "Traditional Ethiopian wedding crowned bride",
     title: "Imperial Crowning Harmony",
     category: "bridal",
@@ -360,7 +360,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-28",
-    src: "/images/Screenshot_20261022_232919_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_232919_TikTok_Lite.jpg",
     alt: "Commencement day graduation beauty portrait",
     title: "Honorary Graduate Glam",
     category: "celebration",
@@ -384,7 +384,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-30",
-    src: "/images/Screenshot_20261022_232936_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_232936_TikTok_Lite.jpg",
     alt: "Bridal morning prep in studio",
     title: "Bridal Morning Radiance",
     category: "bridal",
@@ -408,7 +408,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-32",
-    src: "/images/Screenshot_20261022_232902_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_232902_TikTok_Lite.jpg",
     alt: "3D lash architecture and winged eyeliner",
     title: "Lash Architecture & Definition",
     category: "editorial",
@@ -420,7 +420,7 @@ const allGalleryImages: GalleryImage[] = [
   },
   {
     id: "img-33",
-    src: "/images/Screenshot_20261022_233007_TikTok Lite.jpg",
+    src: "/images/Screenshot_20261022_233007_TikTok_Lite.jpg",
     alt: "Behind the scenes in the makeup studio",
     title: "Studio Behind-the-Scenes",
     category: "masterclass",
@@ -634,6 +634,7 @@ export default function GalleryPage() {
                   src={img.src}
                   alt={img.alt}
                   fill
+                  loading="lazy"
                   className="object-cover object-center group-hover:scale-106 transition-transform duration-500"
                   sizes="240px"
                 />
@@ -673,6 +674,7 @@ export default function GalleryPage() {
                   src={img.src}
                   alt={img.alt}
                   fill
+                  loading="lazy"
                   className="object-cover object-center group-hover:scale-106 transition-transform duration-500"
                   sizes="240px"
                 />
@@ -745,6 +747,8 @@ export default function GalleryPage() {
                               src={item.src}
                               alt={item.alt}
                               fill
+                              priority={index < 4}
+                              loading={index < 4 ? "eager" : "lazy"}
                               className="rounded-full object-cover group-hover:scale-106 transition-transform duration-500"
                               sizes="180px"
                             />
@@ -769,6 +773,8 @@ export default function GalleryPage() {
                           src={item.src}
                           alt={item.alt}
                           fill
+                          priority={index < 4}
+                          loading={index < 4 ? "eager" : "lazy"}
                           className="object-cover group-hover:scale-106 transition-transform duration-500 ease-out"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                         />

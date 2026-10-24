@@ -18,7 +18,7 @@ interface GalleryItem {
 const previewGalleryItems: GalleryItem[] = [
   {
     id: "g1",
-    src: "/Gallery/first-bridal.jpg",
+    src: "/images/first-bridal.jpg",
     alt: "Radiant Ethiopian bride with golden bridal headpiece and veil",
     title: "Sheraton Addis Royal Bride",
     category: "Bridal",
@@ -26,7 +26,7 @@ const previewGalleryItems: GalleryItem[] = [
   },
   {
     id: "g2",
-    src: "/Gallery/yery.jpg",
+    src: "/images/yery.jpg",
     alt: "Yeron Habtamu in regal traditional Ethiopian dress at wedding celebration",
     title: "Heritage Melse Elegance",
     category: "Melse & Traditional",
@@ -34,7 +34,7 @@ const previewGalleryItems: GalleryItem[] = [
   },
   {
     id: "g3",
-    src: "/Gallery/bridal-1.jpg",
+    src: "/images/bridal-1.jpg",
     alt: "High definition bridal makeup with winged eyeliner and soft blush",
     title: "Skylight Luxury Bridal Glam",
     category: "Bridal",
@@ -42,7 +42,7 @@ const previewGalleryItems: GalleryItem[] = [
   },
   {
     id: "g4",
-    src: "/Gallery/yerry.jpg",
+    src: "/images/yerry.jpg",
     alt: "Yerry's Touch reception counter with gold lettering and celebration flowers",
     title: "Creative Suite & Studio Counter",
     category: "Studio Moments",
@@ -50,7 +50,7 @@ const previewGalleryItems: GalleryItem[] = [
   },
   {
     id: "g5",
-    src: "/Gallery/bridal-2.jpg",
+    src: "/images/bridal-2.jpg",
     alt: "Bridal detail look with glossy nude lips and glowing skin",
     title: "Modern Reception Bride",
     category: "Bridal",
@@ -58,7 +58,7 @@ const previewGalleryItems: GalleryItem[] = [
   },
   {
     id: "g6",
-    src: "/Gallery/Screenshot_20261022_230822_Instagram.jpg",
+    src: "/images/Screenshot_20261022_230822_Instagram.jpg",
     alt: "Editorial glam with defined eyes and warm bronze contour",
     title: "Golden Hour High-Fashion",
     category: "Editorial",
@@ -98,27 +98,26 @@ export default function InteractiveGallery() {
   };
 
   return (
-    <section id="gallery" className="py-16 sm:py-24 relative bg-[#FAF7F2] bg-fluted-texture">
+    <section id="gallery" className="py-16 sm:py-24 relative bg-[#FAF7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Header and Filter Tabs */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
-          <div className="space-y-2">
-            <div className="inline-flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
-              <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-gold-700">
-                Visual Archives
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-gold-600" />
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-700">
+                Portfolio
               </span>
             </div>
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-espresso">
-              Editorial Lookbook &amp;{" "}
-              <span className="gold-foil-text italic">Bridal Glow</span>
+            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-espresso">
+              Selected Looks &amp; <span className="italic font-serif text-gold-600">Bridal Artistry</span>
             </h2>
-            <p className="text-xs sm:text-sm text-espresso/70 max-w-lg">
-              Explore highlighted captures of Ethiopian bridal traditions and red-carpet glam.
+            <p className="text-sm text-espresso/70 max-w-lg font-light leading-relaxed">
+              Highlights of traditional Ethiopian wedding celebrations, Melse ceremonies, and editorial sessions.
             </p>
           </div>
 
-          {/* Action to view full gallery & Filter Pills */}
+          {/* Filter Pills */}
           <div className="flex flex-wrap items-center gap-2">
             {categories.map((cat) => (
               <button
@@ -127,10 +126,10 @@ export default function InteractiveGallery() {
                   setActiveCategory(cat);
                   setSelectedItemIndex(null);
                 }}
-                className={`px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider transition-all duration-200 ${
+                className={`px-4 py-1.5 rounded-full text-xs font-medium tracking-wider transition-all duration-200 ${
                   activeCategory === cat
-                    ? "gold-gradient-bg text-espresso shadow-gold font-bold scale-105"
-                    : "glass-luxury-card text-espresso/80 hover:text-espresso hover:border-gold/50"
+                    ? "bg-espresso text-ivory shadow-sm"
+                    : "bg-espresso/5 text-espresso/70 hover:text-espresso"
                 }`}
               >
                 {cat}
@@ -139,10 +138,10 @@ export default function InteractiveGallery() {
 
             <Link
               href="/gallery"
-              className="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-full bg-velvet text-ivory text-[10px] font-bold uppercase tracking-wider hover:bg-gold-700 transition-colors ml-1 shadow-sm"
+              className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full bg-gold-400 hover:bg-gold-300 text-espresso text-xs font-semibold uppercase tracking-wider transition-colors ml-1 shadow-sm"
             >
-              <span>Full Archives</span>
-              <ArrowRight className="w-3 h-3" />
+              <span>Full Gallery</span>
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>
@@ -168,6 +167,7 @@ export default function InteractiveGallery() {
                   src={item.src}
                   alt={item.alt}
                   fill
+                  loading="lazy"
                   className="object-cover object-center group-hover:scale-106 transition-transform duration-700 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
@@ -185,13 +185,10 @@ export default function InteractiveGallery() {
                 </div>
 
                 <div className="absolute bottom-4 left-4 right-4 text-white z-10">
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-gold-300 block mb-0.5">
-                    Lookbook Feature
-                  </span>
                   <h3 className="font-serif text-base font-bold text-ivory leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-[11px] text-white/80 mt-1 line-clamp-1 font-light">
+                  <p className="text-xs text-white/80 mt-1 line-clamp-1 font-light">
                     {item.description}
                   </p>
                 </div>
@@ -204,9 +201,9 @@ export default function InteractiveGallery() {
         <div className="mt-10 text-center">
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full gold-gradient-bg text-espresso text-xs font-bold uppercase tracking-wider shadow-gold hover:shadow-gold-lg transition-all animate-shimmer"
+            className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-espresso hover:bg-gold-700 text-ivory text-xs font-semibold uppercase tracking-wider transition-colors shadow-sm"
           >
-            <span>View All 48 Lookbook Archives in Gallery Page</span>
+            <span>Explore Complete Gallery</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
